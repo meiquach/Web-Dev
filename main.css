@@ -4,6 +4,7 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #555;
+    margin-bottom: 50px;
 }
 .navbar a {
     float: left;
@@ -36,10 +37,11 @@ body {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  /*min-width: 160px;*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  /*z-index: 1;*/
 }
+
 
 .dropdown-content a {
   float: none;
@@ -50,9 +52,29 @@ body {
   text-align: left;
 }
 
+.dropdown-content button {
+  float: none;
+  color: black;
+  padding: 12px 32px 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: inherit;
+  border: none;
+  background: inherit;
+  margin: 0;
+}
+
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -67,4 +89,59 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
+  margin-bottom: 300px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: auto;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+    /*adding animation*/
+  animation-name: modalopen;
+  animation-duration: 1s;
+
+}
+
+.modal-content {
+  background-color: white;
+  /*20% margin on top and bottom (to stay away from all other elements),
+  and auto for left and right, because we want it to be in the middle
+  */
+  font-size: 18px;
+  margin: 20% auto;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0
+  rgba(0,0,0,0.17);
+}
+
+.modal-content p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.closeBtn {
+  float: right;
+  font-size: 25px;
+  color: #ccc;
+}
+
+/*:focus because the closeBtn is taking an input*/
+.closeBtn:hover, .closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
 }

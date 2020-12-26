@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
 
-    <div class="navbar">
-      <a href="homepage.html">Home</a>
-      <a href="mathGame.html">Math Game</a>
-      <a href="#calculator">Calculator</a>
-      <div class="dropdown">
-        <button class="dropbtn">My Account
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Sign Up</a>
-          <a href="#">Login</a>
-          <a href="#">View Account</a>
-          <a href="#">High Scores</a>
-        </div>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="mathGame.html">Math Game</a>
+    <a href="#calculator">Calculator</a>
+    <div class="dropdown">
+      <button class="dropbtn">My Account
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <button class="signup-login-button" id="modalBtn">Sign up / Login</button>
+        <!-- <a href="#">Sign Up</a> -->
+        <!-- <a href="#">Login</a> -->
+        <a href="#">View Account</a>
+        <a href="#">High Scores</a>
+
       </div>
-      <a href="#about" style="float:right;">About</a>
-      <a href="contact.html" style="float:right;">Contact</a>
+    </div>
+    <a href="#about" style="float:right;">About</a>
+    <a href="contact.html" style="float:right;">Contact</a>
+  </div>
+
+
+
+  <h1 class="title">Home</h1>
+  <p>[Description of the website here]</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Stray_kitten_Rambo002.jpg" width="500" class="kitty">
+
+
+  <!-- A new div tag for Sign up/ Login box-->
+  <div class="modal" id="simpleModal">
+
+    <div class="modal-content">
+      <span class="closeBtn" id="closeBtn">&times;</span>
+      <p>Sign up / Login</p>
+      <table>
+        <tr>
+          <td><label class="usernameLabel">Username: </label></td>
+          <td><input type="text" placeholder="Enter username"></td>
+        </tr>
+        <tr>
+          <td><label class="passwordLabel">Passsword: </label></td>
+          <td><input type="password" placeholder="Enter password"></td>
+          <td> <button>Submit</button> </td>
+        </tr>
+      </table>
     </div>
 
-    <h1 class="title">Home</h1>
-    <p>[Description of the website here]</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Stray_kitten_Rambo002.jpg" width="500" class="kitty">
+  </div>
 
-    </body>
+  <script src="app.js"></script>
+</body>
+
 </html>
