@@ -15,8 +15,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Sign Up</a>
-          <a href="#">Login</a>
+          <button class="signup-login-button" id="modalBtn">Sign up / Login</button>
           <a href="#">View Account</a>
           <a href="#">High Scores</a>
         </div>
@@ -38,5 +37,33 @@
             <input type="submit" name="">
 
     </form>
+
+
+    <!-- A new div tag for Sign up/ Login box-->
+  <div class="modal" id="simpleModal">
+
+    <div class="modal-content">
+      <span class="closeBtn" id="closeBtn">&times;</span>
+      <p>Sign up / Login</p>
+      <table>
+        <tr>
+          <td><label class="usernameLabel">Username: </label></td>
+          <td><input type="text" placeholder="Enter username"></td>
+        </tr>
+        <tr>
+          <td><label class="passwordLabel">Passsword: </label></td>
+          <td><input type="password" placeholder="Enter password"></td>
+        </tr>
+      </table>
+
+      <br>
+      <button>Submit</button>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+
   </body>
 </html>

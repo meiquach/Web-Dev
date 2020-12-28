@@ -1,108 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Math Game</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-		
-        <div class="navbar">
-      <a href="homepage.html">Home</a>
-      <a href="mathGame.html">Math Game</a>
-      <a href="#calculator">Calculator</a>
-      <div class="dropdown">
-        <button class="dropbtn">My Account 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Sign Up</a>
-          <a href="#">Login</a>
-          <a href="#">View Account</a>
-          <a href="#">High Scores</a>
-        </div>
+
+<head>
+  <title>Math Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="mathGame.html">Math Game</a>
+    <a href="#calculator">Calculator</a>
+    <div class="dropdown">
+      <button class="dropbtn">My Account
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <button class="signup-login-button" id="modalBtn">Sign up / Login</button>
+        <a href="#">View Account</a>
+        <a href="#">High Scores</a>
       </div>
-      <a href="about.html" style="float:right;">About</a>
-      <a href="contact.html" style="float:right;">Contact</a>
-        </div>
-	    
-    <!--Mathgame content!-->
-	    <p>
-        <h1 class="title">MATH GAME</h1>
-        <h2 class="title"><em>Design your own challenge</em></h2>
-        <hr>
-        <ul>
-          <li>
-            <strong>Step 1: Please choose category that you want to practice</strong><br>
-            <em>Random option for all four types</em>
-              </li>
-        </ul>
+    </div>
+    <a href="about.html" style="float:right;">About</a>
+    <a href="contact.html" style="float:right;">Contact</a>
+  </div>
 
-        <!--Checkbox for set up types of game-->
-          <div class="checkbox">
-            <label><input type="checkbox" name="">Addition</label>
-            <label><input type="checkbox" name="">Subtraction</label>
-            <label><input type="checkbox" name="">Multiplication</label>
-            <label><input type="checkbox" name="">Divison</label>
-            <label><input type="checkbox" name="">Random</label>
-          </div>
+  <!--Mathgame content!-->
+  <p>
+  <h1 class="title">MATH GAME</h1>
+  <h2 class="title"><em>Design your own challenge</em></h2>
+  <hr>
+  <ul>
+    <li>
+      <strong>Step 1: Please choose category that you want to practice</strong><br>
+      <em>Random option for all four types</em>
+    </li>
+  </ul>
 
-        <!--Set Difficulty:-->
-        <ul>
-          <li>
-            <strong>Step 2: Set level of difficulty by range</strong><br>
-              </li>
-        </ul>
-          <div>
-          <input type="radio" id="Easy" name="button" >
-          <label for="Easy">Easy (0 to 30)</label>
-        </div>
-        <div>
-          <input type="radio" id="Normal" name="button" >
-          <label for="Normal">Normal(30 to 99)</label>
-        </div>
-        <div>
-          <input type="radio" id="Medium" name="button" >
-          <label for="Medium">Medium (100 to 500)</label>
-        </div>
-        <div>
-          <input type="radio" id="Hard" name="button"
-          <label for="Hard">Hard (501 to 1000)</label>
-        </div>
-        <div>
-          <input type="radio" id="Super" name="button"
-          <label for="Super">Super (1001 to 2000)</label>
-        </div>
-        <div>
-          <input type="radio" id="Any" name="button"
-          <label for="Any">Any levels</label><br>	    
+  <!--Checkbox for set up types of game-->
+  <div class="checkbox">
+    <label><input type="checkbox" name="">Addition</label>
+    <label><input type="checkbox" name="">Subtraction</label>
+    <label><input type="checkbox" name="">Multiplication</label>
+    <label><input type="checkbox" name="">Divison</label>
+    <label><input type="checkbox" name="">Random</label>
+  </div>
 
-        
-        <!--Set default time-->
-        <strong>Note: Each set of game has the timer in 1 min.
-        Try to get as many correct answer that you can!!!</strong>
-        <!--Start button-->
-        <a href="#START"><h2 class="title">READY START</h2></a>
-        <!--Set Scoreboard:-->
+  <!--Set Difficulty:-->
+  <ul>
+    <li>
+      <strong>Step 2: Set level of difficulty by range</strong><br>
+    </li>
+  </ul>
+  <div>
+    <input type="radio" id="Easy" name="button">
+    <label for="Easy">Easy (0 to 30)</label>
+  </div>
+  <div>
+    <input type="radio" id="Normal" name="button">
+    <label for="Normal">Normal(30 to 99)</label>
+  </div>
+  <div>
+    <input type="radio" id="Medium" name="button">
+    <label for="Medium">Medium (100 to 500)</label>
+  </div>
+  <div>
+    <input type="radio" id="Hard" name="button" <label for="Hard">Hard (501 to 1000)</label>
+  </div>
+  <div>
+    <input type="radio" id="Super" name="button" <label for="Super">Super (1001 to 2000)</label>
+  </div>
+  <div>
+    <input type="radio" id="Any" name="button" <label for="Any">Any levels</label><br>
+
+
+    <!--Set default time-->
+    <strong>Note: Each set of game has the timer in 1 min.
+      Try to get as many correct answer that you can!!!</strong>
+    <!--Start button-->
+    <a href="#START">
+      <h2 class="title">READY START</h2>
+    </a>
+    <!--Set Scoreboard:-->
+    <table>
+      <thead>
+        <h3 class="title">SCOREBOARD:</h3>
+        <tr>
+          <th>Weekly</th>
+          <th>Monthly</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Student 1</td>
+          <td>Student 2</td>
+        </tr>
+      </tbody>
+
+    </table>
+    </p>
+
+
+    <!-- A new div tag for Sign up/ Login box -->
+    <div class="modal" id="simpleModal">
+
+      <div class="modal-content">
+        <span class="closeBtn" id="closeBtn">&times;</span>
+        <p>Sign up / Login</p>
         <table>
-          <thead>
-            <h3 class="title">SCOREBOARD:</h3>
-            <tr>
-              <th>Weekly</th>
-              <th>Monthly</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Student 1</td>
-              <td>Student 2</td>
-            </tr>
-          </tbody>
-
+          <tr>
+            <td><label class="usernameLabel">Username: </label></td>
+            <td><input type="text" placeholder="Enter username"></td>
+          </tr>
+          <tr>
+            <td><label class="passwordLabel">Passsword: </label></td>
+            <td><input type="password" placeholder="Enter password"></td>
+          </tr>
         </table>
-      </p>
-    </body>
+
+        <br>
+        <button class="submit-button">Submit</button>
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
-
-
