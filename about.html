@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-          <h1>About</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, hic nam quaerat ab dolorum, debitis architecto perspiciatis tempore ex animi iure velit assumenda! Aut, facilis quod numquam inventore nihil autem?</p>
 
-          <h1>Questions/Concerns?</h1>
-          <a href="contact.html">Contact us!</a>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="mathGame.html">Math Game</a>
+        <a href="#calculator">Calculator</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Account
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <button class="signup-login-button" id="modalBtn">Sign up / Login</button>
+                <!-- <a href="#">Sign Up</a> -->
+                <!-- <a href="#">Login</a> -->
+                <a href="#">View Account</a>
+                <a href="#">High Scores</a>
+
+            </div>
+        </div>
+        <a href="about.html" style="float:right;">About</a>
+        <a href="contact.html" style="float:right;">Contact</a>
+    </div>
+
+    <!--About section-->
+    <h1>About</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, hic nam quaerat ab dolorum, debitis architecto
+        perspiciatis tempore ex animi iure velit assumenda! Aut, facilis quod numquam inventore nihil autem?</p>
+    
+    <!--Link to contact page at bottom of page-->
+    <h1>Questions/Concerns?</h1>
+    <a href="contact.html">Contact us!</a>
+
+    <!-- A new div tag for Sign up/ Login box -->
+    <div class="modal" id="simpleModal">
+
+        <div class="modal-content">
+            <span class="closeBtn" id="closeBtn">&times;</span>
+            <p>Sign up / Login</p>
+            <table>
+                <tr>
+                    <td><label class="usernameLabel">Username: </label></td>
+                    <td><input type="text" placeholder="Enter username"></td>
+                </tr>
+                <tr>
+                    <td><label class="passwordLabel">Passsword: </label></td>
+                    <td><input type="password" placeholder="Enter password"></td>
+                </tr>
+            </table>
+
+            <br>
+            <button class="submit-button">Submit</button>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view whole site.</noscript>
+</body>
+
 </html>
