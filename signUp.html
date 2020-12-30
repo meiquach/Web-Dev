@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+  <!--Took out internal css code in html and made external css file to link to-->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body style="background: #bedbbb;">
+
+  <div class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="mathGame.html">Math Game</a>
+    <a href="#calculator">Calculator</a>
+    <div class="dropdown">
+      <button class="dropbtn">My Account
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="logIn.html">Log in</a>
+        <a href="signUp.html">Sign up</a>
+        <a href="#">View Account</a>
+        <a href="#">High Scores</a>
+
+      </div>
+    </div>
+    <a href="about.html" style="float:right;">About</a>
+    <a href="contact.html" style="float:right;">Contact</a>
+  </div>
+
+
+  <!-- Sign up part added in the following <div> -->
+  <div class="sign-up-div">
+    <h1>Sign up</h1>
+    <hr>
+    <form id="sign-up-form" action="homepage.html">
+
+
+      <div class="sign-up-form-part-1">
+        <label for="firstName"><strong>First name: </strong></label> <br>
+        <input type="text" id="signUpFirstnameInput" placeholder="Enter first name"> <br>
+        <label for="lastName"><strong>Last name: </strong></label> <br>
+        <input type="text" id="signUpLastNameInput" placeholder="Enter last name"> <br>
+        <label for="username"><strong>Username: </strong></label> <br>
+        <input type="text" id="signUpUsernameInput" placeholder="Enter username"> <br>
+        <label for="password"><strong>Passsword: </strong></label> <br>
+        <input type="password" id="signUpPasswordInput" placeholder="Enter password"> <br>
+
+        <label for="security-questions-label" id="securityQuestionsLabel"><strong>Security questions:</strong></label>
+
+        <!-- "name" attribute for <select> can be useful in latter JS part
+        Same goes for "value" attribute for <option>. -->
+        <select id="securityQuestionsSelectTag" name="security-questions" class="security-select-tag">
+          <option value="firstOption" class="options">What's your favorite city?</option>
+          <option value="secondOption" class="options">What's your favorite car brand?</option>
+          <option value="thirdOption" class="options">What's your favorite sport?</option>
+          <input type="text" id="signUpSecurityInput" placeholder="Enter answer">
+        </select>
+
+        <br>
+        <label for="email"><strong>Email: </strong></label> <br>
+        <input type="email" id="signUpEmailInput" placeholder="Enter email address">
+      </div>
+
+      <div class="sign-up-form-part-2">
+        <button class="submit-button" id="signUpSubmitButton">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+
+
+  <script>src = "app.js"</script>
+</body>
+
+</html>

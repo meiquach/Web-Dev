@@ -1,32 +1,36 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#fff5ea;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff5ea;
 }
-hr{
+
+hr {
   border-style: none;
   border-top-style: dotted;
   border-width: 5px;
   width: 60%;
-  border-color:#3fc1c9;
+  border-color: #3fc1c9;
+}
 
-}
 .navbar {
-    overflow: hidden;
-    background-color: #555;
-    margin-bottom: 50px;
+  overflow: hidden;
+  background-color: #555;
+  margin-bottom: 50px;
 }
+
 .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -47,10 +51,9 @@ hr{
   position: absolute;
   background-color: #f9f9f9;
   /*min-width: 160px;*/
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   /*z-index: 1;*/
 }
-
 
 .dropdown-content a {
   float: none;
@@ -74,7 +77,6 @@ hr{
   margin: 0;
 }
 
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
@@ -84,17 +86,16 @@ hr{
   cursor: pointer;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .kitty {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
@@ -107,16 +108,13 @@ hr{
   z-index: auto;
   left: 0;
   top: 0;
-
   height: 100%;
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
-
-    /*adding animation*/
+  /*adding animation*/
   animation-name: modalopen;
   animation-duration: 1s;
-
 }
 
 .modal-content {
@@ -128,8 +126,7 @@ hr{
   margin: 20% auto;
   padding: 40px;
   width: 400px;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0
-  rgba(0,0,0,0.17);
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 }
 
 .modal-content p {
@@ -151,6 +148,175 @@ hr{
 }
 
 @keyframes modalopen {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
+
+
+/************************************************************/
+/* Just Login page*/
+
+.log-in-div {
+  font-size: 18px;
+  text-align: center;
+}
+
+.log-in-div hr {
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  border-color: black;
+}
+
+
+/* "submit-button" class is used in logIn.html AND signUp.html */
+.submit-button {
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background-color: #6f9eaf;
+  cursor: pointer;
+}
+
+
+/************************************************************/
+/************************************************************/
+/* Signup and Login page */
+.sign-up-div {
+  font-size: 18px;
+  text-align: center;
+}
+
+.sign-up-div hr {
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  border-color: black;
+}
+
+
+
+/*
+#signUpFirstnameInput, #signUpLastNameInput, #signUpUsernameInput, #signUpPasswordInput {
+  padding: 10px;
+  background-color: #e7e7de;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  border: none;
+}
+*/
+
+
+
+
+
+
+/*
+#signUpUsernameLabel, #signUpPasswordLabel {
+  position: relative;
+  bottom: 3.5px;
+}
+*/
+
+#logInUsernameInput, #logInPasswordInput {
+  margin: 5px 0 22px 0;
+}
+
+
+
+
+
+/* -----------------------------------*/
+/*Signup page's first form part */
+/* -----------------------------------*/
+/* Full-width input fields */
+/* #signUpUsernameInput, #signUpLastNameInput, #passwordInput, #username { */
+#signUpFirstnameInput, #signUpLastNameInput, #signUpUsernameInput, #signUpPasswordInput {
+  display: inline-block;
+  width: 9%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #e3dfc8;     /*#e7e7de*/
+  opacity: 0.7;
+
+  font-size: 16px;
+}
+
+
+#signUpFirstnameInput:hover, #signUpLastNameInput:hover, #signUpUsernameInput:hover, #signUpPasswordInput:hover {
+  opacity: 0.9;
+}
+
+#signUpFirstnameInput:focus, #signUpLastNameInput:focus, #signUpUsernameInput:focus, #signUpPasswordInput:focus {
+  outline: none;
+  opacity: 0.9;
+}
+
+
+
+
+
+.security-questions {
+  padding: 15px;
+}
+
+.security-select-tag {
+  font-size: 16px;
+  display: block;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: none;
+  background-color: #e7e7de;
+  opacity: 0.9;
+
+  position: relative;
+  left: 920px; /*position is relative to <div class="sign-up-div"> OR the <body> */
+
+}
+
+
+
+
+/*
+.security-select-tag:hover {
+  opacity: 0.5;
+}
+*/
+
+.security-select-tag {
+  background: #e3dfc8;
+  opacity: 0.7;
+}
+
+
+.security-select-tag:focus {
+  outline: none;
+}
+
+
+#signUpSecurityInput, #signUpEmailInput {
+  width: 9%;
+  font-size: 16px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color: #e3dfc8;
+  opacity: 0.7;
+}
+
+#signUpSecurityInput:hover, #signUpEmailInput:hover {
+  opacity: 0.9;
+}
+
+#signUpSecurityInput:focus, #signUpEmailInput:focus {
+  outline: none;
+  opacity: 0.9;
+}
+
+/************************************************************/
