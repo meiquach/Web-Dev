@@ -32,50 +32,34 @@
   </div>
 
 
-  <!-- Following <div> added for logIn -->
+  <!-- Following <div> added for Login -->
   <div class="log-in-div">
     <h1>Login</h1>
     <hr>
-    <!--
-    <table class="log-in-table">
-      <tr>
-        <td><label id="signUpUsernameLabel">Username: </label></td>
-        <td><input type="text" id="signUpUsernameInput" placeholder="Enter username"></td>
-      </tr>
-      <tr>
-        <td><label id="signUpPasswordLabel">Passsword: </label></td>
-        <td><input type="password" id="signUpPasswordInput" placeholder="Enter password"></td>
-      </tr>
-    </table>
+    <form id="log-in-form" action="homepage.html">
 
 
-    <br>
-    <button class="submit-button" id="logInSubmitButton">Submit</button>
-  -->
+      <div class="log-in-form-part-1">
+        <label for="logInUsernameInput"><strong>Username: </strong></label> <br>
+        <input type="text" id="logInUsernameInput" placeholder="Enter username" style="font-size: 16px;"> <br>
+        <label for="logInPasswordInput"><strong>Passsword: </strong></label> <br>
+        <input type="password" id="logInPasswordInput" placeholder="Enter password" style="font-size: 16px;">
+      </div>
 
-  <form id="log-in-form" action="homepage.html">
+      <div class="log-in-form-part-2">
+        <button class="submit-button" id="logInSubmitButton">Log in</button>
+      </div>
 
-
-    <div class="log-in-form-part-1">
-      <label for="logInUsernameInput"><strong>Username: </strong></label> <br>
-      <input type="text" id="logInUsernameInput" placeholder="Enter username" style="font-size: 16px;"> <br>
-      <label for="logInPasswordInput"><strong>Passsword: </strong></label> <br>
-      <input type="password" id="logInPasswordInput" placeholder="Enter password" style="font-size: 16px;">
-    </div>
-
-    <div class="log-in-form-part-2">
-      <button class="submit-button" id="logInSubmitButton">Log in</button>
-    </div>
-
-  </form>
+    </form>
 
     <p>No Account? <a href="signUp.html" target="_blank">Sign up here</a>.</p>
 
   </div>
 
 
-
-  <script>src = "app.js"</script>
+  <script>
+    src = "app.js"
+  </script>
   <noscript>You need to enable JavaScript to view whole site.</noscript>
 </body>
 

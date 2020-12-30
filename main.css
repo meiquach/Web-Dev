@@ -158,8 +158,10 @@ hr {
 }
 
 
-/************************************************************/
-/* Just Login page*/
+/* __________________________________________________________________________________________________ */
+/* ************************************ */
+/*             LOGIN PAGE               */
+/* ************************************ */
 
 .log-in-div {
   font-size: 18px;
@@ -171,62 +173,6 @@ hr {
   width: 100%;
   border-color: black;
 }
-
-
-/* "submit-button" class is used in logIn.html AND signUp.html */
-.submit-button {
-  font-size: 18px;
-}
-
-.submit-button:hover {
-  background-color: #6f9eaf;
-  cursor: pointer;
-}
-
-
-/************************************************************/
-/************************************************************/
-/* Signup and Login page */
-.sign-up-div {
-  font-size: 18px;
-  text-align: center;
-}
-
-.sign-up-div hr {
-  border: 1px solid #f1f1f1;
-  width: 100%;
-  border-color: black;
-}
-
-
-
-/*
-#signUpFirstnameInput, #signUpLastNameInput, #signUpUsernameInput, #signUpPasswordInput {
-  padding: 10px;
-  background-color: #e7e7de;
-  opacity: 0.9;
-  margin-bottom: 10px;
-  border: none;
-}
-*/
-
-
-
-
-
-
-/*
-#signUpUsernameLabel, #signUpPasswordLabel {
-  position: relative;
-  bottom: 3.5px;
-}
-*/
-
-/*
-#logInUsernameInput, #logInPasswordInput {
-  margin: 5px 0 22px 0;
-}
-*/
 
 #logInUsernameInput, #logInPasswordInput {
   display: inline-block;
@@ -251,14 +197,43 @@ hr {
   opacity: 0.9;
 }
 
+/* ------------------------------------------ */
+/* Signup AND Login page */
+/* ------------------------------------------ */
+
+/* "submit-button" class is used in logIn.html AND signUp.html */
+.submit-button {
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background-color: #6f9eaf;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------ */
 
 
+/* __________________________________________________________________________________________________ */
+/* ************************************ */
+/*             SIGNUP PAGE              */
+/* ************************************ */
 
-/* -----------------------------------*/
-/*Signup page's first form part */
-/* -----------------------------------*/
-/* Full-width input fields */
-/* #signUpUsernameInput, #signUpLastNameInput, #passwordInput, #username { */
+
+.sign-up-div {
+  font-size: 18px;
+  text-align: center;
+}
+
+.sign-up-div hr {
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  border-color: black;
+}
+
+/* ------------------------------------------ */
+/* Signup page's input fields */
+/* ------------------------------------------ */
 #signUpFirstnameInput, #signUpLastNameInput, #signUpUsernameInput, #signUpPasswordInput {
   display: inline-block;
   width: 9%;
@@ -280,9 +255,7 @@ hr {
   outline: none;
   opacity: 0.9;
 }
-
-
-
+/* ------------------------------------------------------------------------------------ */
 
 
 .security-questions {
@@ -304,20 +277,10 @@ hr {
 
 }
 
-
-
-
-/*
-.security-select-tag:hover {
-  opacity: 0.5;
-}
-*/
-
 .security-select-tag {
   background: #e3dfc8;
   opacity: 0.7;
 }
-
 
 .security-select-tag:focus {
   outline: none;
@@ -343,4 +306,4 @@ hr {
   opacity: 0.9;
 }
 
-/************************************************************/
+/* __________________________________________________________________________________________________ */
