@@ -102,6 +102,10 @@ hr {
   margin-bottom: 300px;
 }
 
+.lineup {
+  margin-left: 550px;
+}
+
 .modal {
   display: none;
   position: fixed;

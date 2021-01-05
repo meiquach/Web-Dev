@@ -33,55 +33,57 @@
   <h1 class="title">MATH GAME</h1>
   <h2 class="title"><em>Design your own challenge</em></h2>
   <hr>
-  <ul>
-    <li>
-      <strong>Step 1: Please choose category that you want to practice</strong><br>
-      <em>Random option for all four types</em>
-    </li>
-  </ul>
+  <!--Took out list format and reformatted it so now it is a header - no bullet point-->
+  <h4 class="title">
+    <strong>Step 1: Please choose category that you want to practice</strong><br>
+    <em>Random category includes all four types of operations</em>
+  </h4>
 
   <!--Checkbox for set up types of game-->
-       <div>
-         <input type="radio" id="Addition" name="button" >
+  <!--Added id and name property so 2 radio types will work separately.-->
+  <!--Also now centered-->
+       <div class="title" id="operation">
+         <input type="radio" id="Addition" name="operation"> 
          <label for="Addition">Addition</label>
-         <input type="radio" id="Subtraction" name="button" >
+         <input type="radio" id="Subtraction" name="operation"> 
          <label for="Subtraction">Subtraction</label>
-         <input type="radio" id="Divison" name="button" >
-         <label for="Divison">Divison</label>
-         <input type="radio" id="Multiplication" name="button" >
+         <input type="radio" id="Division" name="operation"> 
+         <label for="Division">Division</label>
+         <input type="radio" id="Multiplication" name="operation"> 
          <label for="Multiplication">Multiplication</label>
-         <input type="radio" id="Random" name="button" >
+         <input type="radio" id="Random" name="operation"> 
          <label for="Random">Random</label>
        </div>
 
   <!--Set Difficulty:-->
-  <ul>
-    <li>
-      <strong>Step 2: Set level of difficulty by range</strong><br>
-    </li>
-  </ul>
-  <div>
-    <input type="radio" id="Easy" name="button">
-    <label for="Easy">Easy (0 to 30)</label>
+  <!--Took out list format and reformatted it so now it is a header - no bullet point-->
+  <h4 class="title">
+    <strong>Step 2: Set level of difficulty by range</strong>
+  </h4>
+  <!--Added id and name property so 2 radio types will work separately.-->
+  <!--Also now centered-->
+  <div class="lineup" id="difficulty">
+      <input type="radio" id="Easy" name="difficulty">
+      <label for="Easy">Easy (0 to 30)</label>
+      <br>
+      <input type="radio" id="Normal" name="difficulty">
+      <label for="Normal">Normal(30 to 99)</label>
+      <br>
+      <input type="radio" id="Medium" name="difficulty">
+      <label for="Medium">Medium (100 to 500)</label>
+      <br>
+      <input type="radio" id="Hard" name="difficulty">
+      <label for="Hard">Hard (501 to 1000)</label>
+      <br>
+      <input type="radio" id="Super" name="difficulty"> 
+      <label for="Super">Super (1001 to 2000)</label>
+      <br>
+      <input type="radio" id="Any" name="difficulty"> 
+      <label for="Any">Any levels</label>
+      <br>
   </div>
-  <div>
-    <input type="radio" id="Normal" name="button">
-    <label for="Normal">Normal(30 to 99)</label>
-  </div>
-  <div>
-    <input type="radio" id="Medium" name="button">
-    <label for="Medium">Medium (100 to 500)</label>
-  </div>
-  <div>
-    <input type="radio" id="Hard" name="button" <label for="Hard">Hard (501 to 1000)</label>
-  </div>
-  <div>
-    <input type="radio" id="Super" name="button" <label for="Super">Super (1001 to 2000)</label>
-  </div>
-  <div>
-    <input type="radio" id="Any" name="button" <label for="Any">Any levels</label><br>
 
-
+  <h4 class="title">
     <!--Set default time-->
     <strong>Note: Each set of game has the timer in 1 min.
       Try to get as many correct answer that you can!!!</strong>
@@ -90,6 +92,7 @@
       <h2 class="title">READY START</h2>
     <!--Add practice section-->
       <a href="#PRACTICE"><h2 class="title">PRACTICE</h2></a><hr>
+  </h4>
     </a>
    </p>
 
